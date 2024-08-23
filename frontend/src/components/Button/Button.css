@@ -1,7 +1,7 @@
 .button {
   font: inherit;
-  border: 1px solid #3b0062;
-  color: #3b0062;
+  border: 1px solid #265073;
+  color: #265073;
   background: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -30,7 +30,7 @@
 
 .button:hover,
 .button:active {
-  background: #3b0062;
+  background: #265073;
   color: white;
 }
 
@@ -41,11 +41,11 @@
 .button--flat:hover,
 .button--flat:active {
   background: rgba(59, 0, 98, 0.3);
-  color: #3b0062;
+  color: #265073;
 }
 
 .button--raised {
-  background: #3b0062;
+  background: #265073;
   color: white;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
 }
@@ -56,30 +56,30 @@
 }
 
 .button.button--accent {
-  border-color: #fab83f;
-  color: #fab83f;
+  border-color: #9AD0C2;
+  color: #9AD0C2;
 }
 
 .button--accent:hover,
 .button--accent:active {
-  background: #fab83f;
-  color: #3b0062;
+  background: #9AD0C2;
+  color: #265073;
 }
 
 .button--flat.button--accent:hover,
 .button--flat.button--accent:active {
   background: rgba(250, 184, 63, 0.3);
-  color: #fab83f;
+  color: #9AD0C2;
 }
 
 .button.button--accent.button--raised {
-  background: #fab83f;
-  color: #3b0062;
+  background: #9AD0C2;
+  color: #265073;
 }
 
 .button--raised.button--accent:hover,
 .button--raised.button--accent:active {
-  background: #fbc766;
+  background: #9AD0C2;
 }
 
 .button.button--danger {

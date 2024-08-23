@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require('path');
 
 const express = require('express');
@@ -61,10 +62,10 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
-db_URI = 'mongodb+srv://loaytamer:loaytamer@datahub.96uiwds.mongodb.net/socialApp?retryWrites=true&w=majority&appName=DataHub';
+db_URI = process.env.DB_URI;
 mongoose.connect(db_URI)
   .then(result => {
-    const server = app.listen(8080);
+    const server = app.listen(process.env.PORT);
     const io = require('./socket').init(server);
     io.on('connection', socket => {
       console.log('Client connected');
