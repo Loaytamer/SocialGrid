@@ -4,7 +4,7 @@
 
 .navigation-item a {
   text-decoration: none;
-  color: white;
+  color: #f9f7f5;
 }
 
 .navigation-item.mobile {
@@ -13,13 +13,13 @@
 }
 
 .navigation-item.mobile a {
-  color: #3b0062;
+  color: #3C5B6F;
 }
 
 .navigation-item a:hover,
 .navigation-item a:active,
 .navigation-item a.active {
-  color: #fab83f;
+  color: #948979;
 }
 
 .navigation-item:last-of-type {
@@ -30,12 +30,12 @@
   font: inherit;
   background: transparent;
   border: none;
-  color: white;
+  color: #f9f7f5;
   cursor: pointer;
   padding: 0;
 }
 
 .navigation-item button:hover,
 .navigation-item button:active {
-  color: #fab83f;
+  color: #948979;
 }

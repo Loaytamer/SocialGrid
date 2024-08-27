@@ -3,6 +3,7 @@
   padding: 0 1rem;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .spacer {
@@ -14,6 +15,7 @@
   padding: 0;
   margin: 0 1.5rem;
   display: none;
+  text-decoration: none;
 }
 
 @media (min-width: 700px) {

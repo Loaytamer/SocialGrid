@@ -1,7 +1,8 @@
 .button {
   font: inherit;
-  border: 1px solid #265073;
-  color: #265073;
+  border: 1px solid #1d3a51;
+  border-radius: 6px;
+  color: #1d3344;
   background: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -30,7 +31,7 @@
 
 .button:hover,
 .button:active {
-  background: #265073;
+  background: #1d3a51;
   color: white;
 }
 
@@ -40,46 +41,46 @@
 
 .button--flat:hover,
 .button--flat:active {
-  background: rgba(59, 0, 98, 0.3);
-  color: #265073;
+  background: #19639f53;
+  color: #1d3a51;
 }
 
 .button--raised {
-  background: #265073;
+  background: #1d3a51;
   color: white;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
 }
 
 .button--raised:hover,
 .button--raised:active {
-  background: #520288;
+  background: #1d374d;
 }
 
 .button.button--accent {
-  border-color: #9AD0C2;
-  color: #9AD0C2;
+  border-color: #948979;
+  color: #948979;
 }
 
 .button--accent:hover,
 .button--accent:active {
-  background: #9AD0C2;
-  color: #265073;
+  background: #948979;
+  color: #1d3a51;
 }
 
 .button--flat.button--accent:hover,
 .button--flat.button--accent:active {
   background: rgba(250, 184, 63, 0.3);
-  color: #9AD0C2;
+  color: #948979;
 }
 
 .button.button--accent.button--raised {
-  background: #9AD0C2;
-  color: #265073;
+  background: #948979;
+  color: #1d3a51;
 }
 
 .button--raised.button--accent:hover,
 .button--raised.button--accent:active {
-  background: #9AD0C2;
+  background: #948979;
 }
 
 .button.button--danger {
