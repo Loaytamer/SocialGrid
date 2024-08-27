@@ -23,7 +23,7 @@ class Feed extends Component {
   };
 
   componentDidMount() {
-    fetch('https://socialgrid-backend-production.up.railway.app/auth/status', {
+    fetch('https://socialgrid-production.up.railway.app/auth/status', {
       headers: {
         Authorization: 'Bearer ' + this.props.token
       }
@@ -40,7 +40,7 @@ class Feed extends Component {
       .catch(this.catchError);
 
     this.loadPosts();
-    const socket = openSocket('https://socialgrid-backend-production.up.railway.app');
+    const socket = openSocket('https://socialgrid-production.up.railway.app');
     socket.on('posts', data => {
       if (data.action === 'create') {
         this.addPost(data.post);
@@ -94,7 +94,7 @@ class Feed extends Component {
       page--;
       this.setState({ postPage: page });
     }
-    fetch('https://socialgrid-backend-production.up.railway.app/feed/posts?page=' + page, {
+    fetch('https://socialgrid-production.up.railway.app/feed/posts?page=' + page, {
       headers: {
         Authorization: 'Bearer ' + this.props.token
       }
@@ -122,7 +122,7 @@ class Feed extends Component {
 
   statusUpdateHandler = event => {
     event.preventDefault();
-    fetch('https://socialgrid-backend-production.up.railway.app/auth/status', {
+    fetch('https://socialgrid-production.up.railway.app/auth/status', {
       method: 'PATCH',
       headers: {
         Authorization: 'Bearer ' + this.props.token,
@@ -171,10 +171,10 @@ class Feed extends Component {
     formData.append('title', postData.title);
     formData.append('content', postData.content);
     formData.append('image', postData.image);
-    let url = 'https://socialgrid-backend-production.up.railway.app/feed/post';
+    let url = 'https://socialgrid-production.up.railway.app/feed/post';
     let method = 'POST';
     if (this.state.editPost) {
-      url = 'https://socialgrid-backend-production.up.railway.app/feed/post/' + this.state.editPost._id;
+      url = 'https://socialgrid-production.up.railway.app/feed/post/' + this.state.editPost._id;
       method = 'PUT';
     }
 
@@ -225,7 +225,7 @@ class Feed extends Component {
 
   deletePostHandler = postId => {
     this.setState({ postsLoading: true });
-    fetch('https://socialgrid-backend-production.up.railway.app/feed/post/' + postId, {
+    fetch('https://socialgrid-production.up.railway.app/feed/post/' + postId, {
       method: 'DELETE',
       headers: {
         Authorization: 'Bearer ' + this.props.token

@@ -14,7 +14,7 @@ class SinglePost extends Component {
 
   componentDidMount() {
     const postId = this.props.match.params.postId;
-    fetch('https://socialgrid-backend-production.up.railway.app/feed/post/' + postId, {
+    fetch('https://socialgrid-production.up.railway.app/feed/post/' + postId, {
       headers: {
         Authorization: 'Bearer ' + this.props.token
       }
@@ -29,7 +29,7 @@ class SinglePost extends Component {
         this.setState({
           title: resData.post.title,
           author: resData.post.creator.name,
-          image: 'https://socialgrid-backend-production.up.railway.app/' + resData.post.imageUrl,
+          image: 'https://socialgrid-production.up.railway.app/' + resData.post.imageUrl,
           date: new Date(resData.post.createdAt).toLocaleDateString('en-US'),
           content: resData.post.content
         });
