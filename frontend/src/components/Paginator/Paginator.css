@@ -17,8 +17,8 @@
 
 .paginator__control:hover,
 .paginator__control:active {
-  color: #948979;
-  border-color: #948979;
+  color: #aa9b84;
+  border-color: #aa9b84;
 }
 
 .paginator__control:focus {

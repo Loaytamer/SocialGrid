@@ -1,6 +1,7 @@
 .button {
   font: inherit;
-  border: 1px solid #1d3a51;
+  /* border: 1px solid #1d3a51; */
+  border: 0px;
   border-radius: 6px;
   color: #1d3344;
   background: none;
@@ -48,7 +49,7 @@
 .button--raised {
   background: #1d3a51;
   color: white;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.121);
 }
 
 .button--raised:hover,
@@ -57,30 +58,30 @@
 }
 
 .button.button--accent {
-  border-color: #948979;
-  color: #948979;
+  border-color: #aa9b84;
+  color: #aa9b84;
 }
 
 .button--accent:hover,
 .button--accent:active {
-  background: #948979;
+  background: #aa9b84;
   color: #1d3a51;
 }
 
 .button--flat.button--accent:hover,
 .button--flat.button--accent:active {
   background: rgba(250, 184, 63, 0.3);
-  color: #948979;
+  color: #aa9b84;
 }
 
 .button.button--accent.button--raised {
-  background: #948979;
-  color: #1d3a51;
+  background: #aa9b84;
+  color: #f9f7f5;
 }
 
 .button--raised.button--accent:hover,
 .button--raised.button--accent:active {
-  background: #948979;
+  background: #857b6c;
 }
 
 .button.button--danger {

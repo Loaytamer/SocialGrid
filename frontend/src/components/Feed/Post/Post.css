@@ -1,8 +1,10 @@
 .post {
   margin: 1rem 0;
-  border: 1px solid #265073;
+  /* border: 1px solid #265073; */
   border-radius: 5px;
   padding: 0.5rem;
+  background-color: #fefdfdd6;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.092);
 }
 
 .post__meta {
